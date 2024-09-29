@@ -1,5 +1,3 @@
-from glob import glob
-
 import pandas as pd
 import plotly.express as px
 import streamlit as st
@@ -282,10 +280,17 @@ def get_category(name):
     return "Otros"
 
 
+st.set_page_config(page_title="Mercadona Scrapper")
+
 st.title("Mercadona Scrapper")
 
 
 macro_data_frame = pd.DataFrame()
+
+st.write(
+    "Este programa permite analizar las facturas de Mercadona en formato PDF. "
+    "Sube tus facturas y obtén información sobre tus gastos en productos."
+)
 
 docs = st.file_uploader("Upload a file", type=["pdf"], accept_multiple_files=True)
 
