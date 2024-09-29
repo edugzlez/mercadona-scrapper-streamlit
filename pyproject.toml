@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mercadona-stats"
+version = "0.1.0"
+description = ""
+authors = ["edugzlez <edugonzalezvaq@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+streamlit = "^1.38.0"
+mdona-scrapper = "^0.1.3"
+plotly = "^5.24.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.8"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
